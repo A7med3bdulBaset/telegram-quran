@@ -1,0 +1,45 @@
+{
+	"name": "functions",
+	"scripts": {
+		"build": "tsc && ef-tspm",
+		"build:watch": "tsc --watch",
+		"serve": "npm run build && firebase emulators:start --only functions",
+		"shell": "npm run build && firebase functions:shell",
+		"start": "npm run shell",
+		"deploy": "firebase deploy --only functions",
+		"logs": "firebase functions:log",
+		"lint": "eslint src/**/*.ts",
+		"lint:fix": "eslint src/** --fix",
+		"format": "prettier --write ./src",
+		"format:check": "prettier --check ./src",
+		"type-check": "tsc --noEmit",
+		"ci-check": "pnpm type-check && pnpm lint && pnpm format:check"
+	},
+	"engines": {
+		"node": "18"
+	},
+	"main": "lib/index.js",
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.5",
+		"firebase": "^9.23.0",
+		"firebase-admin": "^11.8.0",
+		"firebase-functions": "^4.4.1",
+		"node-telegram-bot-api": "^0.61.0"
+	},
+	"devDependencies": {
+		"@ef-carbon/tspm": "^2.2.5",
+		"@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+		"@next/eslint-plugin-next": "^13.4.9",
+		"@types/node-telegram-bot-api": "^0.61.6",
+		"@typescript-eslint/eslint-plugin": "^5.61.0",
+		"@typescript-eslint/parser": "^5.61.0",
+		"dotenv": "^16.3.1",
+		"eslint": "^8.44.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "5.0.0-alpha.2",
+		"firebase-functions-test": "^3.1.0",
+		"prettier": "^3.0.0",
+		"typescript": "5.1.6"
+	},
+	"private": true
+}
