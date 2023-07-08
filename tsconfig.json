@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"baseUrl": "./",
+		"outDir": "lib",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"target": "es2017",
+		"typeRoots": ["node_modules/@types", "src/types"],
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"compileOnSave": true,
+	"include": ["src"]
+}
