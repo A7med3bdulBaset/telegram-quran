@@ -1,7 +1,7 @@
 /** Shared variables */
 
-import { _callbacks } from "./redux/actions";
 import state from "./redux/store";
+import { _callbacks } from "./redux/types";
 
 /** API breakpoints */
 
