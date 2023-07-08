@@ -12,10 +12,7 @@
 
 ## Scripts
 
-- `npm install` - Install the dependencies.
-- `npm run dev` - Run the development invironment - to compile typescript files.
-- `npm run watch` - Run the server in watch mode `nodemon`.
-- `npm run start` - Run the server in production mode.
+// TODO
 
 ## Author
 
