@@ -1,0 +1,28 @@
+/** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
+module.exports = {
+	endOfLine: "crlf",
+	useTabs: true,
+	semi: true,
+	singleQuote: false,
+	tabWidth: 2,
+	trailingComma: "es5",
+	printWidth: 80,
+	importOrder: [
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"@/bot",
+		"@/shared",
+		"@/redux/(.*)$",
+		"",
+		"^@/config/(.*)$",
+		"@/utils/(.*)$",
+		"@/helpers/(.*)$",
+		"",
+		"^types$",
+		"^@/types/(.*)$",
+		"",
+		"^[./]",
+	],
+	importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+	plugins: ["@ianvs/prettier-plugin-sort-imports"],
+};
