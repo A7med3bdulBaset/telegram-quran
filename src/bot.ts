@@ -8,7 +8,7 @@ import {
 	setCurrentAction,
 	state,
 } from "@/shared";
-import { _actions } from "@/redux/actions";
+import { _actions } from "@/redux/types";
 
 import { handleMessage } from "@/utils/handleMessage";
 import { saveUserToDatabase } from "@/helpers/database";
